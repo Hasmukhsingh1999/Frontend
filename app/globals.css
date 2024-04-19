@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-dark:'black'
 }
 
 @layer utilities {
@@ -24,4 +25,13 @@
 @font-face {
   font-family: 'neue-light';
   src: url('../utils/fonts/HelveticaNeue.woff');
+}
+
+.background-overlay {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(233, 0, 38, 0.3),
+    var(--primary-dark)
+  );
+  
 }
