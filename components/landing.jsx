@@ -10,7 +10,7 @@ const Landing = () => {
             Gallery Experience
           </span>
         </h1>
-        <p className="text-lg  text-center font-neue-light pt-10">
+        <p className="text-lg md:w-1/2 text-center font-neue-light pt-10">
           Discover the extraordinary abilities and creative manifestations of
           both established and up-and-coming artists hailing from various
           corners of the world.

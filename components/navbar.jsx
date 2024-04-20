@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div className={navbarClasses}>
-      <div className="md:px-[15px] w-full grid md:grid-cols-4 grid-cols-2 text-primary items-center ">
+      <div className=" w-full grid md:grid-cols-4 grid-cols-2 text-primary items-center ">
         <h1 className="col-span-1">
           <span className="font-neue-medium capitalize text-2xl">
             sketch fab
