@@ -17,7 +17,7 @@ const Navbar = () => {
     };
   }, []);
 
-  const navbarClasses = `z-[999] pt-[20px] pb-[20px] flex justify-between items-center md:px-24 px-5 fixed w-full ${
+  const navbarClasses = `z-[999] pt-[20px] pb-[20px] flex justify-between items-center md:px-24 px-5 fixed w-full cursor-pointer ${
     isScrolled
       ? 'transform translate-y-[-100%] transition-all duration-300'
       : ''
