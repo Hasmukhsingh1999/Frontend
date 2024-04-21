@@ -1,6 +1,12 @@
+"use client"
 import AboutUs from '@/components/about';
 import ArtCollection from '@/components/art-collection';
+import Articles from '@/components/articles';
+import CTA from '@/components/cta';
+import FeaturesWork from '@/components/feature-work';
+import Footer from '@/components/footer';
 import Landing from '@/components/landing';
+import Testimonial from '@/components/testimonial';
 import React from 'react';
 // import LocomotiveScroll from 'locomotive-scroll';
 
@@ -11,7 +17,11 @@ const page = () => {
       <Landing />
       <AboutUs />
       <ArtCollection />
-      <div className='h-screen w-full'></div>
+      <Testimonial />
+      <FeaturesWork />
+      <Articles />
+      <CTA />
+      <Footer />
     </div>
   );
 };

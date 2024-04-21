@@ -2,13 +2,14 @@ import React from 'react';
 
 const ArtCollection = () => {
   return (
-    <div className="w-full   text-primary md:px-24 px-5 mt-16">
-      <div className="w-full h-[80vh] flex md:flex-row flex-col gap-5">
+    <div className="w-full   text-primary md:px-24 px-5 mt-16 pb-20">
+      <div className="w-full min-h-[70vh] flex md:flex-row flex-col gap-5">
         <div className="md:w-1/2 w-full flex  flex-col justify-between">
           <div>
             <p className="text-4xl md:w-4/6  w-full">
               Through our artist profiles, we provide a glimpse into the sources
-              of inspiration of these gifted individuals.
+              of <span className="text-red-500">inspiration</span> of these{' '}
+              <span className="text-red-500">gifted</span> individuals.
             </p>
             <p className="mt-10 md:w-4/5 w-full text-xl">
               Embark on a journey through their portfolios, where you will
@@ -17,7 +18,7 @@ const ArtCollection = () => {
             </p>
           </div>
           <div>
-            <button className="p-6  md:w-4/6 w-full border-red-500 border rounded-full mt-5">
+            <button className="p-6  md:w-4/6 w-full border-red-500 hover:bg-red-500 hover:text-white border rounded-full mt-5">
               Discover Art Collection
             </button>
           </div>
