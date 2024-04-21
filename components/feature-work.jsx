@@ -27,23 +27,10 @@ const FeaturesWork = () => {
 };
 
 const Projects = () => {
-  // const projectRefs = useRef([]);
-  // const handleOver = (index, isHovering) => {
-  //   gsap.to(projectRefs.current[index], {
-  //     duration: 0.5,
-  //     width: isHovering ? '100%' : 'auto',
-  //     ease: 'power3.inOut',
-  //   });
-  // };
   return (
     <div className="w-full mt-12 pb-20">
       <div className="w-full h-[60vh] relative">
-        <div
-          className="absolute w-0 h-full bg-red-600"
-          // ref={(element) => (projectRefs.current[0] = element)}
-          // onMouseEnter={() => handleOver(0, true)}
-          // onMouseLeave={() => handleOver(0, false)}
-        ></div>
+        <div className="absolute w-0 h-full bg-red-600"></div>
         <img
           src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=2066&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           className="w-full h-full object-cover"
