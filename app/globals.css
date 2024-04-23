@@ -7,16 +7,16 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-body{
-  background: black;
-  font-family: "neue-regular";
+body {
+  background: #fffef8;
+  font-family: 'neue-regular';
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-  .text-primary{
+  .text-primary {
     color: white;
   }
 }
@@ -33,3 +33,6 @@ body{
   src: url('../utils/fonts/HelveticaNeue.woff');
 }
 
+.ant-card .ant-card-body{
+  padding:0px !important
+}

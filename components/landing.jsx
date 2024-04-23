@@ -2,42 +2,50 @@ import React from 'react';
 
 const Landing = () => {
   return (
-    <div className="w-full h-screen  relative">
-      <div className="absolute w-full h-full flex items-center justify-center text-primary z-20 flex-col ">
-        <h1 className="grid grid-cols-1 justify-center items-center md:text-[6vw] text-5xl font-medium font-neue-medium leading-[.99] md:mt-44 mt-12">
-          <span className=" text-center">Plunge into a Captivating</span>{' '}
-          <span className="font-sans italic text-center">
-            Gallery Experience
-          </span>
-        </h1>
-        <p className="text-lg md:w-1/2 text-center font-neue-light pt-10">
-          Discover the extraordinary abilities and creative manifestations of
-          both established and up-and-coming artists hailing from various
-          corners of the world.
-        </p>
-        <div className="mt-10 flex md:flex-row flex-col md:gap-6 gap-4">
-          <button className="md:w-[15vw]  md:p-6 px-12 py-4 bg-white text-black rounded-full font-semibold text-xl hover:border-white hover:border hover:bg-transparent hover:text-white">
-            Discover Art
-          </button>
-          <button className="md:p-6 md:w-[15vw] px-12 py-4 border-white border hover:bg-white hover:text-black  text-white rounded-full font-semibold text-xl">
-            Contact Us
-          </button>
+    <div className="w-full h-full  relative grid md:grid-cols-2 grid-cols-1">
+      <div className="w-full h-[100vh] relative">
+        <div className="absolute w-full h-full bg-black opacity-30 "></div>
+        <div className="absolute w-full h-full  z-10 flex items-center justify-center flex-col text-primary">
+          <h1 className="md:text-7xl text-5xl">Wedding</h1>
+          <p className='md:px-24 px-5 text-center'>
+            We are dedicated to curating a wide range of high-quality, stylish
+            products
+          </p>
+          <div className="mt-6">
+            <button className="p-5 border border-zinc-100 rounded-full">
+              Shop now
+            </button>
+          </div>
         </div>
+
+        <img
+          src="https://assets-global.website-files.com/645a69e6ff9a558805774bf2/645d39d8da4f2744fa9134b0_image%20872-p-800.jpg"
+          alt=""
+          srcset=""
+          className="w-full h-full object-cover"
+        />
       </div>
-      <div
-        className="absolute w-full h-full background-overlay "
-        style={{
-          backgroundImage:
-            'linear-gradient(to bottom, rgba(233, 0, 38, 0.3), black)',
-        }}
-      ></div>
-      <video
-        src="https://assets-global.website-files.com/64a466f88f23f57bfdd487cd/64a57bf0ef680a13e9340f22_banner%20video%20background-transcode.mp4"
-        autoPlay
-        muted
-        loop
-        className="w-full h-full object-cover"
-      ></video>
+      <div className="w-full h-[100vh] relative">
+        <div className="absolute w-full h-full bg-black opacity-30"></div>
+        <div className="absolute w-full h-full  z-10 flex items-center justify-center flex-col text-primary">
+          <h1 className="md:text-7xl text-5xl">New Arrivals</h1>
+          <p className='md:px-24 px-5 text-center'>
+            We are dedicated to curating a wide range of high-quality, stylish
+            products
+          </p>
+          <div className="mt-6">
+            <button className="p-5 border border-zinc-100 rounded-full">
+              Shop now
+            </button>
+          </div>
+        </div>
+        <img
+          src="https://assets-global.website-files.com/645a69e6ff9a558805774bf2/645e27a2a712b0144adc27fa_image%20860-p-800.jpg"
+          alt=""
+          srcset=""
+          className="w-full h-full object-cover"
+        />
+      </div>
     </div>
   );
 };

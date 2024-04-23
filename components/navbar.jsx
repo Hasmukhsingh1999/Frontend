@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className=" w-full grid md:grid-cols-4 grid-cols-2 text-primary items-center ">
         <h1 className="col-span-1">
           <span className="font-neue-medium capitalize text-2xl">
-            sketch fab
+            Shop Sphere
           </span>
         </h1>
         <nav className="border border-zinc-400 pt-[12px] pb-[12px] rounded-full col-span-2  justify-center items-center relative overflow-hidden md:flex hidden">
