@@ -1,13 +1,21 @@
 import React from 'react';
 import { Card } from 'antd';
+import { useGetCategoryQuery } from '@/redux/feature/productAPI';
 
 const Categories = () => {
+  const { data } = useGetCategoryQuery('shoes');
+  // console.log(data);
+
+  console.log(process.env.NEXT_PUBLIC_PUBLICBASE_URL);
+
   return (
     <div className="w-full min-h-screen text-black  md:px-24 px-5 mt-28">
       <div className="w-full flex justify-between  flex-row md:flex-col">
-        <h1 className="font-neue-regular md:text-4xl text-2xl">Explored by Categories</h1>
+        <h1 className="font-neue-regular md:text-4xl text-2xl">
+          Explored by Categories
+        </h1>
         <div className="flex items-center gap-4">
-          <p className=''>VIEW MORE</p>
+          <p className="">VIEW MORE</p>
           <span>
             <img
               src="https://assets-global.website-files.com/645a69e5ff9a553155774bec/645cc2d6c44939979db7e577_right-arrow-medium.svg"

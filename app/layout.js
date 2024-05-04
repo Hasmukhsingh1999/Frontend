@@ -1,5 +1,6 @@
 import Navbar from '@/components/navbar';
 import './globals.css';
+import Wrapper from '@/components/Provider';
 
 export const metadata = {
   title: 'Shop Sphere',
@@ -10,8 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <main>{children}</main>
+        <Wrapper>
+          <Navbar />
+          <main>{children}</main>
+        </Wrapper>
       </body>
     </html>
   );
