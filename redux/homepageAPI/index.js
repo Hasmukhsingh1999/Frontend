@@ -1,14 +1,16 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-export const productApi = createApi({
+export const homepageApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: process.env.NEXT_PUBLIC_PUBLICBASE_URL,
   }),
   endpoints: (builder) => ({
-    getCategory: builder.query({
-      query: (category) => `products/category?q=${category}`,
+    fetchHomepageData: builder.query({
+      query: () => ({
+        url: '/homepage',
+      }),
     }),
   }),
 });
 
-export const { useGetCategoryQuery } = productApi;
+export const { useFetchHomepageDataQuery } = homepageApi;

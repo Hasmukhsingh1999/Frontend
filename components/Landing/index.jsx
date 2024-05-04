@@ -4,11 +4,14 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import Hero from './components/hero-section';
+import { useFetchHomepageDataQuery } from '@/redux/homepageAPI';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Landing = () => {
   const main = useRef();
+  const { data } = useFetchHomepageDataQuery();
+  console.log(data)
   const boxes = [
     {
       imgUrl:

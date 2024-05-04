@@ -1,12 +1,9 @@
 import React from 'react';
 import { Card } from 'antd';
-import { useGetCategoryQuery } from '@/redux/feature/productAPI';
+
 
 const Categories = () => {
-  const { data } = useGetCategoryQuery('shoes');
-  // console.log(data);
 
-  console.log(process.env.NEXT_PUBLIC_PUBLICBASE_URL);
 
   return (
     <div className="w-full min-h-screen text-black  md:px-24 px-5 mt-28">
