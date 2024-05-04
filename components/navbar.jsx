@@ -1,37 +1,17 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 
+
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY > 0;
-      setIsScrolled(scrolled);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const navbarClasses = `z-[999] pt-[20px] pb-[20px] flex justify-between items-center md:px-24 px-5 fixed w-full cursor-pointer ${
-    isScrolled
-      ? 'transform translate-y-[-100%] transition-all duration-300'
-      : ''
-  }`;
+  const navbarClasses = `z-[99999] pt-[20px] pb-[20px] flex justify-between items-center lg:px-24 px-5 fixed w-full cursor-pointer `;
 
   return (
     <div className={navbarClasses}>
-      <div className=" w-full grid md:grid-cols-4 grid-cols-2 text-primary items-center ">
+      <div className=" w-full grid lg:grid-cols-4 grid-cols-2 text-primary items-center ">
         <h1 className="col-span-1">
-          <span className="font-neue-medium capitalize text-2xl">
-            Shop Sphere
-          </span>
+          <span className=" capitalize text-5xl  font-base-boom">A/S</span>
         </h1>
-        <nav className="border border-zinc-400 pt-[12px] pb-[12px] rounded-full col-span-2  justify-center items-center relative overflow-hidden md:flex hidden">
+        <nav className="  pt-[12px] pb-[12px] rounded-full col-span-2  justify-center items-center relative overflow-hidden lg:flex hidden">
           <div
             className="absolute w-full h-full"
             style={{
@@ -39,27 +19,31 @@ const Navbar = () => {
               backgroundColor: ' rgba(0, 0, 0, .3)',
             }}
           ></div>
-          <div className="flex items-center gap-10 z-30">
-            {[
-              'Demos',
-              'About Us',
-              'Collections',
-              'Artists',
-              'News',
-              'All Pages',
-            ].map((navLinks, index) => (
-              <span key={index} className="text-lg">
-                {navLinks}
-              </span>
-            ))}
+          <div className="flex items-center justify-evenly w-full z-30">
+            {['Shop', 'Collections', 'Explore', 'FAQs'].map(
+              (navLinks, index) => (
+                <span
+                  key={index}
+                  className=" font-grotesk-mono text-sm font-thin uppercase"
+                >
+                  {navLinks}
+                </span>
+              ),
+            )}
           </div>
         </nav>
-        <div className="col-span-1 text-end md:flex hidden justify-end">
-          <span className=" pt-[10px] pb-[12px] px-10 rounded-full  text-xl hover:bg-white hover:text-black ease-linear transition duration-75 bg-[#FFFFFF33]">
-            Contact
+        <div className="col-span-1 text-end lg:flex hidden justify-end gap-7">
+          <span className="pt-[12px] pb-[12px] rounded-full col-span-2  justify-center items-center relative  font-grotesk-mono">
+            Login
+          </span>
+          <span className="pt-[12px] pb-[12px] rounded-full col-span-2  justify-center items-center relative  font-grotesk-mono">
+            Bag/0
+          </span>
+          <span className="pt-[12px] pb-[12px] rounded-full col-span-2  justify-center items-center relative  font-grotesk-mono">
+            Menu
           </span>
         </div>
-        <div className="flex justify-end md:hidden">
+        <div className="flex justify-end lg:hidden">
           <img src="https://assets-global.website-files.com/64a466f88f23f57bfdd487cd/64a548260e5452010820025a_menu%20btn%20white%20svg.svg" />
         </div>
       </div>

@@ -21,18 +21,22 @@ body {
   }
 }
 @font-face {
-  font-family: 'neue-regular';
-  src: url('../utils/fonts/HelveticaNeue.woff');
+  font-family: 'grotesk-mono';
+  src: url('../utils/fonts/FKGroteskMono-Regular.woff2');
 }
 @font-face {
-  font-family: 'neue-medium';
-  src: url('../utils/fonts/HelveticaNeue.woff');
+  font-family: 'times-now-light';
+  src: url('../utils/fonts/TimesNow-ExtraLight.woff2');
 }
 @font-face {
-  font-family: 'neue-light';
-  src: url('../utils/fonts/HelveticaNeue.woff');
+  font-family: 'times-now-semilight';
+  src: url('../utils/fonts/TimesNow-SemiLight.woff2');
+}
+@font-face {
+  font-family: 'base-boom';
+  src: url('../utils/fonts/BASE_BLOOM_Demo.otf');
 }
 
-.ant-card .ant-card-body{
-  padding:0px !important
+.ant-card .ant-card-body {
+  padding: 0px !important;
 }

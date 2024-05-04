@@ -13,9 +13,10 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        'neue-regular': ['neue-regular'],
-        'neue-medium': ['neue-medium'],
-        'neue-light': ['neue-light'],
+        'grotesk-mono': ['grotesk-mono'],
+        'times-now-light': ['times-now-light'],
+        'times-now-semilight': ['times-now-semilight'],
+        'base-boom': ['base-boom'],
       },
       container: {
         center: true,
