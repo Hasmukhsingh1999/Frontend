@@ -1,0 +1,8 @@
+.ant-card,
+.ant-card .ant-card-cover img {
+  border-radius: 0px !important;
+}
+
+.ant-card .ant-card-meta-detail {
+  padding: 1vw;
+}

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('../styles/custom-ant-style.css');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -8,7 +9,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 body {
-  background: #fffef8;
+  background: #e9e6e1;
   font-family: 'neue-regular';
 }
 
